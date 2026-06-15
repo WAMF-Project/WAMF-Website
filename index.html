@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="WAMF - Wildlife Activity Monitoring Framework. AI-powered wildlife monitoring for cameras, edge devices and observations." />
+  <title>WAMF | Wildlife Activity Monitoring Framework</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="WAMF home">
+      <span class="brand-icon" aria-hidden="true">◉</span>
+      <span>
+        <strong>WAMF</strong>
+        <small>Wildlife Activity Monitoring Framework</small>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="https://docs.wamf.uk">Docs</a>
+      <a href="https://github.com/WAMF">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Open-source wildlife monitoring</p>
+        <h1>AI-powered wildlife observation for cameras, edge devices and gardens.</h1>
+        <p class="lede">
+          WAMF captures wildlife activity, detects visitors, classifies species,
+          stores observations and helps turn camera feeds into useful insight.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="https://docs.wamf.uk">Read the docs</a>
+          <a class="button secondary" href="https://github.com/WAMF">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="WAMF project summary">
+        <div class="status-row">
+          <span class="status-dot"></span>
+          <span>v0.4 platform stabilisation</span>
+        </div>
+        <ul>
+          <li>Camera capture and media retention</li>
+          <li>Species observations and metadata</li>
+          <li>Frigate integration today</li>
+          <li>Abstraction layer planned for v0.5</li>
+          <li>Edge devices planned for v0.6</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Features</p>
+        <h2>Built for practical wildlife monitoring.</h2>
+      </div>
+
+      <div class="grid cards">
+        <article class="card">
+          <h3>Camera-first</h3>
+          <p>Designed around real camera feeds, snapshots, clips and observations.</p>
+        </article>
+        <article class="card">
+          <h3>Species records</h3>
+          <p>Store sightings, media, timestamps and useful species metadata.</p>
+        </article>
+        <article class="card">
+          <h3>Retention tools</h3>
+          <p>Clean up old media and keep storage from growing into a digital bramble patch.</p>
+        </article>
+        <article class="card">
+          <h3>Extensible roadmap</h3>
+          <p>Future support for multiple sources, RTSP feeds and edge inference nodes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Roadmap</p>
+        <h2>Current direction.</h2>
+      </div>
+
+      <div class="timeline">
+        <article>
+          <span>v0.4</span>
+          <h3>Platform and Bird Lab stabilisation</h3>
+          <p>Admin UI, retention, logging, live camera view, documentation and deployment polish.</p>
+        </article>
+        <article>
+          <span>v0.5</span>
+          <h3>Abstraction layer</h3>
+          <p>Decouple capture and detection sources so WAMF can support more input methods.</p>
+        </article>
+        <article>
+          <span>v0.6</span>
+          <h3>Edge devices</h3>
+          <p>Distributed capture and inference, including Raspberry Pi and other edge nodes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <h2>Start with the docs, then visit the code.</h2>
+      <p>Use this site as WAMF’s public front door. Keep the deeper technical details in the docs repo.</p>
+      <div class="actions">
+        <a class="button primary" href="https://docs.wamf.uk">Documentation</a>
+        <a class="button secondary" href="https://github.com/WAMF">GitHub organisation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> WAMF. Open-source wildlife monitoring.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
