@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roadmap | WAMF</title>
+    <meta
+      name="description"
+      content="The WAMF project roadmap, including current release focus, planned features and future direction."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/assets/icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/icons/favicon-16x16.png"
+    />
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico" />
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/icons/site.webmanifest" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="WAMF home">
+        <img
+          class="site-logo"
+          src="/assets/images/WAMF-Header.png"
+          alt="WAMF logo"
+        />
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/#features">Features</a>
+        <a href="/#how-it-works">How It Works</a>
+        <a href="/#explore">Explore</a>
+        <a href="/#why-wamf">Why WAMF?</a>
+        <a href="/roadmap.html">Roadmap</a>
+        <a href="https://docs.wamf.uk">Docs</a>
+        <a href="https://github.com/WAMF-Project">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section page-hero">
+        <p class="eyebrow">Development Roadmap</p>
+        <h1>Where WAMF is today, and where it is heading.</h1>
+        <p class="lede">
+          WAMF is under active development. This roadmap reflects the current
+          direction of the project, but priorities may evolve through real-world
+          testing, feedback and practical use.
+        </p>
+      </section>
+
+      <section class="section roadmap-page">
+        <article class="roadmap-release current">
+          <span class="roadmap-status">Current Focus</span>
+          <h2>v0.4 – Platform Stabilisation</h2>
+          <p>
+            The current release focuses on delivering a stable foundation for
+            WAMF, improving reliability, usability and deployment for
+            self-hosted wildlife monitoring.
+          </p>
+
+          <ul>
+            <li>Stable Frigate event processing</li>
+            <li>AI bird species identification</li>
+            <li>Observation storage using SQLite</li>
+            <li>Snapshot and clip archiving</li>
+            <li>Media retention tools</li>
+            <li>Recent detections interface</li>
+            <li>Activity views</li>
+            <li>Species metadata and reference information</li>
+            <li>Health and status endpoints</li>
+            <li>Admin tools</li>
+            <li>Docker deployment testing</li>
+            <li>Public website and documentation foundations</li>
+          </ul>
+        </article>
+
+        <article class="roadmap-release">
+          <span class="roadmap-status">Next Release</span>
+          <h2>v0.5 – Extensibility and Observation Management</h2>
+          <p>
+            The v0.5 release is planned to improve WAMF’s internal structure and
+            make observations easier to explore.
+          </p>
+
+          <ul>
+            <li>Detection abstraction layer</li>
+            <li>Capture source abstraction</li>
+            <li>Cleaner internal provider interfaces</li>
+            <li>Improved API consistency</li>
+            <li>Observation Explorer</li>
+            <li>Filtering by species</li>
+            <li>Filtering by date range</li>
+            <li>Filtering by confidence</li>
+            <li>Improved observation browsing</li>
+            <li>Documentation updates for developers and users</li>
+          </ul>
+        </article>
+
+        <article class="roadmap-release">
+          <span class="roadmap-status">Planned</span>
+          <h2>v0.6 – Edge Devices and Distributed Capture</h2>
+          <p>
+            The v0.6 release is expected to explore edge devices and distributed
+            capture workflows.
+          </p>
+
+          <ul>
+            <li>Raspberry Pi capture nodes</li>
+            <li>Distributed camera sources</li>
+            <li>Remote capture devices</li>
+            <li>Edge-side capture and processing experiments</li>
+            <li>Early support for alternative inference paths</li>
+            <li>Better foundations for multi-device deployments</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section roadmap-notes">
+        <div class="roadmap-note-card">
+          <h2>Future Direction</h2>
+          <p>Future releases may explore:</p>
+          <ul>
+            <li>Additional wildlife categories beyond birds</li>
+            <li>More detection and classification backends</li>
+            <li>Improved multi-camera workflows</li>
+            <li>Richer statistics and activity trends</li>
+            <li>Better media browsing</li>
+            <li>Optional integrations with external dashboards</li>
+            <li>Community-driven plugins or extensions</li>
+            <li>Improved deployment options</li>
+          </ul>
+          <p>
+            These items are not fixed release promises. They represent areas of
+            interest as the project grows.
+          </p>
+        </div>
+
+        <div class="roadmap-note-card">
+          <h2>Project Philosophy</h2>
+          <p>
+            WAMF is designed for wildlife, not security. Frigate provides a
+            strong foundation for camera events and object detection. WAMF
+            builds on that foundation with species identification, observation
+            management, media archiving and a wildlife-focused interface.
+          </p>
+          <ul>
+            <li>Open source</li>
+            <li>Self hosted</li>
+            <li>Practical to run</li>
+            <li>Friendly to hobbyists and experimenters</li>
+            <li>Useful before it is complex</li>
+            <li>Extensible without becoming bloated</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section cta">
+        <h2>Want to follow WAMF as it grows?</h2>
+        <p>
+          Start with the documentation, browse the code, or follow development
+          through the GitHub organisation.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="https://docs.wamf.uk"
+            >Documentation</a
+          >
+          <a class="button secondary" href="https://github.com/WAMF-Project"
+            >GitHub</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> WAMF. Open source wildlife monitoring.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
