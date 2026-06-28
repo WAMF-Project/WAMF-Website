@@ -1,0 +1,26 @@
+---
+layout: blog
+title: Blog
+---
+
+<section class="section page-hero">
+  <p class="eyebrow">WAMF Blog</p>
+  <h1>Development notes from the WAMF project.</h1>
+  <p class="lede">
+    Updates, design notes and development progress from the Wildlife Activity
+    Monitoring Framework.
+  </p>
+</section>
+
+<section class="section blog-list">
+  {% for post in site.posts %}
+  <article class="blog-card">
+    <p class="post-meta">{{ post.date | date: "%d %b %Y" }}</p>
+    <h2>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h2>
+    <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+    <a class="read-more" href="{{ post.url }}">Read post →</a>
+  </article>
+  {% endfor %}
+</section>
