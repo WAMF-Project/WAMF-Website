@@ -4,8 +4,21 @@ layout: blog
 
 <article class="section blog-post">
   <p class="eyebrow">WAMF Blog</p>
+
   <h1>{{ page.title }}</h1>
-  <p class="post-meta">{{ page.date | date: "%d %b %Y" }}</p>
+
+  <div class="post-badges">
+    {% if page.category %}
+    <span class="post-badge">{{ page.category }}</span>
+    {% endif %} {% if page.version %}
+    <span class="post-badge version">{{ page.version }}</span>
+    {% endif %}
+  </div>
+
+  <p class="post-meta">
+    {{ page.date | date: "%d %B %Y" }} {% if page.author %} • {{ page.author }}
+    {% endif %}
+  </p>
 
   <div class="post-content">{{ content }}</div>
 </article>

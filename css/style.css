@@ -654,3 +654,38 @@ h3 {
 .post-content p {
   margin-bottom: 1.4rem;
 }
+
+.post-badges {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.post-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 0.45rem 0.9rem;
+
+  border-radius: 999px;
+
+  background: rgba(3, 169, 244, 0.12);
+  border: 1px solid rgba(3, 169, 244, 0.25);
+
+  color: #03a9f4;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.post-badge.version {
+  background: rgba(87, 200, 77, 0.12);
+  border-color: rgba(87, 200, 77, 0.25);
+  color: #57c84d;
+}
+
+.post-meta {
+  color: #9aa6bf;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
