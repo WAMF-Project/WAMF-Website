@@ -64,9 +64,12 @@
 
       <nav class="nav" aria-label="Main navigation">
         <a href="#features">Features</a>
-        <a href="#roadmap">Roadmap</a>
+        <a href="#how">How It Works</a>
+        <a href="#explore">Explore</a>
+        <a href="#why-wamf">Why WAMF?</a>
+        <a href="#roadmap">Road Map</a>
         <a href="https://docs.wamf.uk">Docs</a>
-        <a href="https://github.com/WAMF">GitHub</a>
+        <a href="https://github.com/WAMF-Project/WAMF">GitHub</a>
       </nav>
     </header>
 
@@ -247,55 +250,173 @@
         </div>
       </section>
 
-      <section id="roadmap" class="section">
+      <section id="how" class="section">
         <div class="section-heading">
-          <p class="eyebrow">Roadmap</p>
-          <h2>Current direction.</h2>
+          <p class="eyebrow">From detection to observation</p>
+          <h2>Turn Frigate detections into wildlife observations.</h2>
         </div>
 
         <div class="timeline">
           <article>
-            <span>v0.4</span>
-            <h3>Platform and Bird Lab stabilisation</h3>
+            <div class="workflow-step-title">
+    <div class="card-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera-icon lucide-camera"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"/><circle cx="12" cy="13" r="3"/></svg>
+    </div>
+            <span>Detect</span>
+      </div>      
             <p>
-              Admin UI, retention, logging, live camera view, documentation and
-              deployment polish.
+              Frigate provides reliable object detection, event recording and camera management, forming the foundation that WAMF builds upon.
             </p>
           </article>
           <article>
-            <span>v0.5</span>
-            <h3>Abstraction layer</h3>
+            <div class="workflow-step-title">
+    <div class="card-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+    </div>
+            <span>Identify</span>
+            </div>
             <p>
-              Decouple capture and detection sources so WAMF can support more
-              input methods.
+              WAMF classifies wildlife using AI, enriching every detection with species information and observation metadata.
             </p>
           </article>
           <article>
-            <span>v0.6</span>
-            <h3>Edge devices</h3>
+            <div class="workflow-step-title">
+    <div class="card-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-archive-icon lucide-archive"><rect width="20" height="5" x="2" y="3" rx="1"/><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></svg>
+    </div>
+            <span>Explore</span>
+           </div> 
             <p>
-              Distributed capture and inference, including Raspberry Pi and
-              other edge nodes.
+              Observations, media and statistics are stored in a structured archive, making it easy to review wildlife activity over time.
             </p>
           </article>
         </div>
       </section>
+      <section id="explore" class="section explore-section">
+  <div class="section-heading">
+    <p class="eyebrow">Explore WAMF</p>
+    <h2>Purpose-built for wildlife monitoring.</h2>
+  </div>
 
-      <section class="section cta">
-        <h2>Start with the docs, then visit the code.</h2>
-        <p>
-          Use this site as WAMF’s public front door. Keep the deeper technical
-          details in the docs repo.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="https://docs.wamf.uk"
-            >Documentation</a
-          >
-          <a class="button secondary" href="https://github.com/WAMF"
-            >GitHub organisation</a
-          >
-        </div>
-      </section>
+  <article class="product-showcase">
+    <img
+      src="assets/screenshots/dashboard.png"
+      alt="WAMF dashboard showing recent detections"
+      class="product-screenshot"
+    />
+
+    <div class="product-copy">
+      <span class="showcase-number">01</span>
+      <h3>Monitor activity</h3>
+      <p>
+        Keep track of recent detections, latest visitors and system activity
+        from a single overview.
+      </p>
+    </div>
+  </article>
+
+  <article class="product-showcase product-showcase-reverse">
+    <img
+      src="assets/screenshots/recent-feed.png"
+      alt="WAMF recent feed showing wildlife observation cards"
+      class="product-screenshot"
+    />
+
+    <div class="product-copy">
+      <span class="showcase-number">02</span>
+      <h3>Review every observation</h3>
+      <p>
+        Browse detections with thumbnails, confidence scores, timestamps and
+        archived media.
+      </p>
+    </div>
+  </article>
+
+  <article class="product-showcase">
+    <img
+      src="assets/screenshots/species-page.png"
+      alt="WAMF species page showing species information"
+      class="product-screenshot"
+    />
+
+    <div class="product-copy">
+      <span class="showcase-number">03</span>
+      <h3>Learn about species</h3>
+      <p>
+        Enrich observations with scientific names, reference material and
+        species information beyond simple object detection.
+      </p>
+    </div>
+  </article>
+</section>
+<section id="why-wamf" class="section why-section">
+  <div class="section-heading">
+    <p class="eyebrow">Why WAMF?</p>
+    <h2>Designed for wildlife, not security.</h2>
+    <p>
+      WAMF extends Frigate with tools built specifically for wildlife
+      monitoring, turning camera detections into useful observations.
+    </p>
+  </div>
+
+  <div class="why-grid">
+    <article class="card">
+      <div class="card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-icon lucide-brain"><path d="M12 18V5"/><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"/><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"/><path d="M18 18a4 4 0 0 0 2-7.464"/><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"/><path d="M6 18a4 4 0 0 1-2-7.464"/><path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"/></svg>
+      </div>
+      <h3>AI Species Identification</h3>
+      <p>Automatically identify bird species from Frigate detections with AI confidence scoring.</p>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-icon lucide-book-open"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+      </div>
+      <h3>Rich Species Information</h3>
+      <p>Every observation is enriched with scientific names, reference imagery and species information.</p>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera-icon lucide-camera"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"/><circle cx="12" cy="13" r="3"/></svg>
+      </div>
+      <h3>Extends Frigate</h3>
+      <p>Enhance your existing Frigate installation without replacing the platform you already trust.</p>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+      </div>
+      <h3>Self Hosted</h3>
+      <p>Keep ownership of your observations, media and wildlife data.</p>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-icon lucide-code"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+      </div>
+      <h3>Open Source</h3>
+      <p>MIT licensed, community driven and designed to grow with the project.</p>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bird-icon lucide-bird"><path d="M16 7h.01"/><path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"/><path d="m20 7 2 .5-2 .5"/><path d="M10 18v3"/><path d="M14 17.75V21"/><path d="M7 18a6 6 0 0 0 3.84-10.61"/></svg>
+      </div>
+      <h3>Wildlife First</h3>
+      <p>Designed specifically for feeders, nest boxes and wildlife cameras instead of general security monitoring.</p>
+    </article>
+  </div>
+
+  <div class="why-cta">
+    <h3>Ready to build your own wildlife monitoring system?</h3>
+    <div class="actions">
+      <a class="button primary" href="https://docs.wamf.uk">Documentation</a>
+      <a class="button secondary" href="https://github.com/WAMF-Project/WAMF">GitHub</a>
+    </div>
+  </div>
+
     </main>
 
     <footer class="site-footer">
