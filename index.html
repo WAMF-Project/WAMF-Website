@@ -1,80 +1,11 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="WAMF - Wildlife Activity Monitoring Framework. AI-powered wildlife monitoring for cameras, edge devices and observations."
-    />
-    <title>WAMF | Wildlife Activity Monitoring Framework</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/workflow.css" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/assets/icons/favicon.svg"
-    />
+---
+layout: default
+title: WAMF
+description: WAMF - Wildlife Activity Monitoring Framework. AI-powered wildlife monitoring for cameras, edge devices and observations.
+workflow: true
+---
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="/assets/icons/favicon-96x96.png"
-    />
-    
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/icons/favicon-32x32.png"
-    />
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/icons/favicon-16x16.png"
-    />
-
-    <link
-      rel="shortcut icon"
-      href="/assets/icons/favicon.ico"
-    />
-
-    <link
-      rel="apple-touch-icon"
-      href="/assets/icons/apple-touch-icon.png"
-    />
-
-    <link
-      rel="manifest"
-      href="/assets/icons/site.webmanifest"
-    />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="WAMF home">
-        <img
-          class="site-logo"
-          src="/assets/images/WAMF-Header.png"
-          alt="WAMF logo"
-        />
-      </a>
-
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#features">Features</a>
-        <a href="#how">How It Works</a>
-        <a href="#explore">Explore</a>
-        <a href="#why-wamf">Why WAMF?</a>
-        <a href="roadmap.html">Road Map</a>
-        <a href="/blog/">Blog</a>
-        <a href="https://docs.wamf.uk">Docs</a>
-        <a href="https://github.com/WAMF-Project/WAMF">GitHub</a>
-      </nav>
-    </header>
-
-    <main id="top">
+<div id="top"></div>
       <section class="hero section">
         <div class="hero-copy">
           <p class="eyebrow">Open-source wildlife monitoring platform</p>
@@ -85,7 +16,7 @@
             observations.
           </p>
           <div class="actions">
-            <a class="button secondary" href="https://github.com/WAMF"
+            <a class="button secondary" href="https://github.com/WAMF-Project"
               >GitHub</a
             >
             <a class="button primary" href="https://docs.wamf.uk"
@@ -101,13 +32,13 @@
 
           <div class="workflow-camera">
             <img
-              src="assets/images/workflow/feeder-empty.png"
+              src="/assets/images/workflow/feeder-empty.png"
               alt="Empty bird feeder"
               class="workflow-image workflow-image-empty"
             />
 
             <img
-              src="assets/images/workflow/feeder-great-tit.png"
+              src="/assets/images/workflow/feeder-great-tit.png"
               alt="Great Tit on bird feeder"
               class="workflow-image workflow-image-bird"
             />
@@ -129,7 +60,7 @@
             </div>
           </div>
         </div>
-      </div>
+      
       </section>
 
       <section id="features" class="section">
@@ -301,7 +232,7 @@
 
   <article class="product-showcase">
     <img
-      src="assets/screenshots/dashboard.png"
+      src="/assets/screenshots/dashboard.png"
       alt="WAMF dashboard showing recent detections"
       class="product-screenshot"
     />
@@ -318,7 +249,7 @@
 
   <article class="product-showcase product-showcase-reverse">
     <img
-      src="assets/screenshots/recent-feed.png"
+      src="/assets/screenshots/recent-feed.png"
       alt="WAMF recent feed showing wildlife observation cards"
       class="product-screenshot"
     />
@@ -335,7 +266,7 @@
 
   <article class="product-showcase">
     <img
-      src="assets/screenshots/species-page.png"
+      src="/assets/screenshots/species-page.png"
       alt="WAMF species page showing species information"
       class="product-screenshot"
     />
@@ -417,16 +348,5 @@
       <a class="button secondary" href="https://github.com/WAMF-Project/WAMF">GitHub</a>
     </div>
   </div>
-
-    </main>
-
-    <footer class="site-footer">
-      <p>© <span id="year"></span> WAMF. Open-source wildlife monitoring.</p>
-    </footer>
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-    <script src="js/workflow.js"></script>
-  </body>
-</html>
+</section>
+    
