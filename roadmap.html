@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Roadmap
-description: The WAMF project roadmap, including current release focus, planned features and future direction.
+description: The WAMF project roadmap, including current releases, planned features and future direction.
 ---
 
 <section class="section page-hero">
@@ -15,99 +15,116 @@ description: The WAMF project roadmap, including current release focus, planned 
 </section>
 
 <section class="section roadmap-page">
-  <article class="roadmap-release current">
-    <span class="roadmap-status">Current Focus</span>
-    <h2>v0.4 – Platform Stabilisation</h2>
+  <article class="roadmap-release">
+    <span class="roadmap-status">Released</span>
+    <h2>v0.4.0 – Platform Stabilisation</h2>
     <p>
-      The current release focuses on delivering a stable foundation for WAMF,
-      improving reliability, usability and deployment for self-hosted wildlife
-      monitoring.
+      Released on 18 September 2026, WAMF v0.4.0 establishes a stable,
+      deployable foundation for self-hosted wildlife monitoring using Frigate
+      as the detection source.
     </p>
 
     <ul>
-      <li>Stable Frigate event processing</li>
+      <li>Stable Frigate event processing over MQTT</li>
       <li>AI bird species identification</li>
       <li>Observation storage using SQLite</li>
       <li>Snapshot and clip archiving</li>
       <li>Media retention tools</li>
-      <li>Recent detections interface</li>
-      <li>Activity views</li>
+      <li>Recent detections and activity views</li>
       <li>Species metadata and reference information</li>
-      <li>Health and status endpoints</li>
-      <li>Admin tools</li>
-      <li>Docker deployment testing</li>
-      <li>Public website and documentation foundations</li>
+      <li>System health and administration tools</li>
+      <li>First-run configuration and administrator bootstrap</li>
+      <li>Reliable restart and shutdown handling</li>
+      <li>Official Docker deployment through GHCR</li>
+      <li>Validated compatibility with Frigate 0.17.2 and 0.18.0</li>
+      <li>Deployment and portability testing across multiple hosts</li>
+      <li>Public website and documentation</li>
     </ul>
   </article>
 
-  <article class="roadmap-release">
+  <article class="roadmap-release current">
     <span class="roadmap-status">Next Release</span>
-    <h2>v0.5 – Extensibility and Observation Management</h2>
+    <h2>v0.4.5 – Usability and Integration</h2>
     <p>
-      The v0.5 release is planned to improve WAMF’s internal structure and make
-      observations easier to explore.
+      v0.4.5 will build on the stable v0.4.0 foundation with a focus on
+      configuration, usability, integrations and clearer WAMF terminology
+      before the larger architectural work planned for v0.5.
     </p>
 
     <ul>
-      <li>Detection abstraction layer</li>
-      <li>Capture source abstraction</li>
-      <li>Cleaner internal provider interfaces</li>
-      <li>Improved API consistency</li>
-      <li>Observation Explorer</li>
-      <li>Filtering by species</li>
-      <li>Filtering by date range</li>
-      <li>Filtering by confidence</li>
-      <li>Improved observation browsing</li>
-      <li>Documentation updates for developers and users</li>
+      <li>Form-based configuration and setup improvements</li>
+      <li>Improved configuration validation and service testing</li>
+      <li>Camera configuration and management improvements</li>
+      <li>Administration navigation and interface polish</li>
+      <li>Search and favourites</li>
+      <li>Improved recent detections</li>
+      <li>Additional WAMF Core health information</li>
+      <li>Improved activity, species and observation insights</li>
+      <li>Archive and media browsing improvements</li>
+      <li>Improved logging and diagnostics</li>
+      <li>Integration configuration improvements</li>
+      <li>WAMF Core terminology introduced across the project</li>
+      
+      <li>Review of Docker user and file ownership handling</li>
     </ul>
   </article>
 
   <article class="roadmap-release">
     <span class="roadmap-status">Planned</span>
-    <h2>v0.6 – Edge Devices and Distributed Capture</h2>
+    <h2>v0.5 – WAMF Core and Scouts</h2>
     <p>
-      The v0.6 release is expected to explore edge devices and distributed
-      capture workflows.
+      v0.5 is planned to begin WAMF's move beyond a Frigate-only architecture.
+      WAMF Core will receive wildlife observations from Scouts through a shared
+      event contract, allowing different capture and detection systems to feed
+      the same wildlife monitoring platform.
     </p>
 
     <ul>
-      <li>Raspberry Pi capture nodes</li>
-      <li>Distributed camera sources</li>
-      <li>Remote capture devices</li>
-      <li>Edge-side capture and processing experiments</li>
-      <li>Early support for alternative inference paths</li>
-      <li>Better foundations for multi-device deployments</li>
+      <li>Detection source abstraction layer</li>
+      <li>Shared WAMF event contract</li>
+      <li>Frigate as a Scout-compatible detection source</li>
+      <li>Direct RTSP detection paths</li>
+      <li>Support for alternative inference hardware and backends</li>
+      <li>Foundations for Raspberry Pi and AI camera Scouts</li>
+      <li>Scout health and configuration</li>
+      <li>Improved and versioned external API</li>
+      <li>Webhook and integration support</li>
+      <li>Review of the WAMF Core web and API architecture</li>
+      <li>Foundations for distributed wildlife monitoring</li>
+    </ul>
+  </article>
+
+  <article class="roadmap-release">
+    <span class="roadmap-status">Future</span>
+    <h2>Beyond v0.5 – Distributed Wildlife Monitoring</h2>
+    <p>
+      Later releases can build on the WAMF Core and Scout architecture to
+      support increasingly varied wildlife monitoring hardware and distributed
+      deployments.
+    </p>
+
+    <ul>
+      <li>Additional wildlife categories beyond birds</li>
+      <li>Additional classification models</li>
+      <li>More Scout hardware and detection backends</li>
+      <li>Distributed and remote capture devices</li>
+      <li>Improved multi-camera and multi-Scout workflows</li>
+      <li>Richer statistics and long-term activity trends</li>
+      <li>Expanded external integrations</li>
+      <li>Community-driven extensions</li>
     </ul>
   </article>
 </section>
 
 <section class="section roadmap-notes">
-  <div class="roadmap-note-card">
-    <h2>Future Direction</h2>
-    <p>Future releases may explore:</p>
-    <ul>
-      <li>Additional wildlife categories beyond birds</li>
-      <li>More detection and classification backends</li>
-      <li>Improved multi-camera workflows</li>
-      <li>Richer statistics and activity trends</li>
-      <li>Better media browsing</li>
-      <li>Optional integrations with external dashboards</li>
-      <li>Community-driven plugins or extensions</li>
-      <li>Improved deployment options</li>
-    </ul>
-    <p>
-      These items are not fixed release promises. They represent areas of
-      interest as the project grows.
-    </p>
-  </div>
+  
 
   <div class="roadmap-note-card">
     <h2>Project Philosophy</h2>
     <p>
-      WAMF is designed for wildlife, not security. Frigate provides a strong
-      foundation for camera events and object detection. WAMF builds on that
-      foundation with species identification, observation management, media
-      archiving and a wildlife-focused interface.
+      WAMF is designed for wildlife monitoring rather than security. It aims
+      to turn camera detections into useful wildlife observations while
+      remaining practical for self-hosted systems and experimental hardware.
     </p>
     <ul>
       <li>Open source</li>
@@ -123,13 +140,11 @@ description: The WAMF project roadmap, including current release focus, planned 
 <section class="section cta">
   <h2>Want to follow WAMF as it grows?</h2>
   <p>
-    Start with the documentation, browse the code, or follow development through
-    the GitHub organisation.
+    Start with the documentation, browse the code, or follow development
+    through the GitHub organisation.
   </p>
   <div class="actions">
     <a class="button primary" href="https://docs.wamf.uk">Documentation</a>
-    <a class="button secondary" href="https://github.com/WAMF-Project"
-      >GitHub</a
-    >
+    <a class="button secondary" href="https://github.com/WAMF-Project">GitHub</a>
   </div>
 </section>
