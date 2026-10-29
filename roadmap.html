@@ -15,8 +15,15 @@ description: The WAMF project roadmap, including current releases, planned featu
 </section>
 
 <section class="section roadmap-page">
+  <article class="roadmap-release current">
+    <span class="roadmap-status">Current stable release</span>
+    <h2>v0.4.3 – Security Maintenance</h2>
+    <p>WAMF v0.4.3 is the latest stable release. It strengthens embedded-navigation URL validation and security regression testing while retaining the Frigate-based bird detection pipeline. It introduces no new application features or dependency upgrades.</p>
+    <p>Two known protobuf vulnerabilities remain documented accepted risks, not patched fixes. Read the <a href="https://github.com/WAMF-Project/WAMF/releases/tag/v0.4.3">published release</a>, <a href="https://docs.wamf.uk/getting-started/installation/">installation guide</a> and <a href="https://docs.wamf.uk/reference/security/">security guidance</a>.</p>
+  </article>
+
   <article class="roadmap-release">
-    <span class="roadmap-status">Released</span>
+    <span class="roadmap-status">Historical release</span>
     <h2>v0.4.0 – Platform Stabilisation</h2>
     <p>
       Released on 18 September 2026, WAMF v0.4.0 establishes a stable,
@@ -42,13 +49,12 @@ description: The WAMF project roadmap, including current releases, planned featu
     </ul>
   </article>
 
-  <article class="roadmap-release current">
-    <span class="roadmap-status">Next Release</span>
-    <h2>v0.4.5 – Usability and Integration</h2>
+  <article class="roadmap-release">
+    <span class="roadmap-status">Upcoming development</span>
+    <h2>Kingfisher v0.5.0</h2>
     <p>
-      v0.4.5 will build on the stable v0.4.0 foundation with a focus on
-      configuration, usability, integrations and clearer WAMF terminology
-      before the larger architectural work planned for v0.5.
+      Kingfisher is in development and is not part of the stable v0.4.3 release.
+      The areas below describe possible work, not delivery commitments.
     </p>
 
     <ul>
@@ -70,13 +76,11 @@ description: The WAMF project roadmap, including current releases, planned featu
   </article>
 
   <article class="roadmap-release">
-    <span class="roadmap-status">Planned</span>
-    <h2>v0.5 – WAMF Core and Scouts</h2>
+    <span class="roadmap-status">Future development</span>
+    <h2>Raven</h2>
     <p>
-      v0.5 is planned to begin WAMF's move beyond a Frigate-only architecture.
-      WAMF Core will receive wildlife observations from Scouts through a shared
-      event contract, allowing different capture and detection systems to feed
-      the same wildlife monitoring platform.
+      Raven is a future development direction. The WAMF Core and Scouts ideas
+      below are exploratory and are not available in the stable release.
     </p>
 
     <ul>
@@ -96,7 +100,7 @@ description: The WAMF project roadmap, including current releases, planned featu
 
   <article class="roadmap-release">
     <span class="roadmap-status">Future</span>
-    <h2>Beyond v0.5 – Distributed Wildlife Monitoring</h2>
+    <h2>Longer-term ideas – Distributed Wildlife Monitoring</h2>
     <p>
       Later releases can build on the WAMF Core and Scout architecture to
       support increasingly varied wildlife monitoring hardware and distributed
